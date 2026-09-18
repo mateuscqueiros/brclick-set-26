@@ -207,6 +207,87 @@ footer a:hover {
   color: #555;
 }
 
+/* Formulário de contato */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 500px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--cor-destaque-clara);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--cor-texto);
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: var(--cor-destaque);
+  outline: none;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.form-contato button {
+  align-self: flex-start;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-destaque);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-contato button:hover {
+  background-color: var(--cor-texto);
+}
+
+/* Lista "Onde me achar" */
+.lista-contato {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-contato li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.lista-contato .canal {
+  width: 100px;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.escondido {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .cabecalho {
     flex-direction: column;
