@@ -288,6 +288,12 @@ footer a:hover {
   display: none;
 }
 
+.pagina-centralizada {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 @media (max-width: 600px) {
   .cabecalho {
     flex-direction: column;
